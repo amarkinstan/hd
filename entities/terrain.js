@@ -45,7 +45,8 @@ HD.Terrain.prototype = {
 function addMesh(geometry, scale, x, y, z, rx, ry, rz, material) {
 
     mesh = new THREE.Mesh(geometry, material);
-    mesh.scale.x = mesh.scale.y = mesh.scale.z = scale;
+    mesh.scale.x = mesh.scale.y = scale;
+    mesh.scale.z = scale *0.5 ;
     mesh.position.x = x;
     mesh.position.y = y;
     mesh.position.z = z;
